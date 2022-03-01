@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  files:
+    num-records-per-file: 5
+    consumer-directory: '/home/user/Documents/result'
+    produser-directory: '/home/user/Documents/watcher'
+  kafka:
+    consumer:
+      bootstrap-servers: 'localhost:9092'
+      topic: 'stock_topic'
+      group-id: 'stock_group_id'
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstarp-servers: locahost:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
