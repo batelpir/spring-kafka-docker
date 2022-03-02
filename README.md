@@ -10,6 +10,8 @@ A JAVA spring boot application which contains two services:
 - read from KAFKA the stock info message.
 - Save it to a local csv file that limited by predefined number of records on different folder
 
+Kafka and zookeeper are running in a docker.
+
 ## Running
 
 ```bash
